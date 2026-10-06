@@ -1,0 +1,25 @@
+flowchart LR
+    A[Hire / Rehire Event] --> B[Onboarding 2.0]
+    B --> C[Employee Central]
+    C --> D[Time Management / Time Off]
+    C --> E[Talent / Skills]
+    C --> F[Reporting & Analytics]
+    C --> G[Integration Layer]
+
+    H[RBP / Security] -.controls.-> B
+    H -.controls.-> C
+    H -.controls.-> D
+    H -.controls.-> F
+
+    I[Business Rules] -.governs.-> B
+    I -.governs.-> C
+    I -.governs.-> D
+
+    G --> J[Payroll / Finance / External HR Systems]
+    G --> K[BI / Data Platform]
+    G --> L[Monitoring & Reconciliation]
+
+    M[Effective Dating] -.cross-cutting.-> C
+    M -.cross-cutting.-> D
+    M -.cross-cutting.-> F
+    M -.cross-cutting.-> G
